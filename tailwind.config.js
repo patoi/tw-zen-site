@@ -7,5 +7,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@patoi/tw-zen-plugin')],
+  safelist: ['zen--suspend', 'zen--off', 'zen--reduced']
 }

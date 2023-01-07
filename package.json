@@ -1,7 +1,7 @@
 {
   "name": "@patoi/tw-zen-size",
   "description": "TW Zen plugin site",
-  "version": "0.1.0",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
+    "@patoi/tw-zen-plugin": "^1.0.4",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",
