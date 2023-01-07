@@ -159,7 +159,7 @@ export default function Home() {
 				<GithubCorner
 					bannerColor="#fff"
 					octoColor="#F98B36"
-					href="https://github.com/patoi/tw-zen"
+					href="https://github.com/patoi/tw-zen-plugin"
 				/>
 			</main>
 		</>
