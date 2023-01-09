@@ -93,7 +93,7 @@ export default function Home() {
           <div className="text-left grid place-items-center md:grid-cols-2 gap-8 md:w-2/3 m-auto p-16 max-md:text-center">
             <div
               data-even
-              className="md:pt-12 mt-auto mb-auto w-full sm:zen--off zen-pop-up"
+              className="md:pt-12 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once"
             >
               <h3 className="text-4xl font-bold">Energy saving</h3>
               <span className="text-xl">
@@ -101,21 +101,21 @@ export default function Home() {
                 intersected.
               </span>
             </div>
-            <div className="md:pt-12 w-3/4 max-md:hidden ">
+            <div className="md:pt-16 w-3/4 max-md:hidden ">
               <img
                 className="zen-once zen-from-right"
                 src="/energy_saving.svg"
                 alt="energy saving"
               />
             </div>
-            <div data-odd className="md:pt-20 w-3/4 max-md:hidden">
+            <div data-odd className="md:pt-16 w-3/4 max-md:hidden">
               <img
                 className="zen-once zen-from-left"
                 src="/distraction_free.svg"
                 alt="distraction free"
               />
             </div>
-            <div className="md:pt-20 mt-auto mb-auto w-full sm:zen--off zen-pop-up">
+            <div className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once">
               <h3 className="text-4xl font-bold">Distraction free</h3>
               <span className="text-xl">
                 Turns off animations in reduced motion mode.
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
             <div
               data-even
-              className="md:pt-20 mt-auto mb-auto w-full sm:zen--off zen-pop-up"
+              className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once"
             >
               <h3 className="text-4xl font-bold">Responsive</h3>
               <span className="text-xl">
@@ -131,21 +131,21 @@ export default function Home() {
                 breakpoints.
               </span>
             </div>
-            <div className="md:pt-20 w-3/4 max-md:hidden">
+            <div className="pt-16 w-3/4 max-md:hidden">
               <img
                 className="zen-once zen-from-right"
                 src="/responsive.svg"
                 alt="responsive"
               />
             </div>
-            <div data-odd className="md:pt-20 w-3/4 max-md:hidden">
+            <div data-odd className="pt-16 w-3/4 max-md:hidden">
               <img
                 className="zen-once zen-pop-up"
                 src="/simple.svg"
                 alt="small and efficient"
               />
             </div>
-            <div className="md:pt-20 mt-auto mb-auto w-full sm:zen--off zen-pop-up">
+            <div className="pt-16 pb-8 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once">
               <h3 className="text-4xl font-bold">Efficient</h3>
               <span className="text-xl">
                 There is no third-party dependency, it&apos;s small and
