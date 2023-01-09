@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import GithubCorner from 'react-github-corner'
-import { Inter } from '@next/font/google'
 import { useEffect } from 'react'
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 	useEffect(() => {
@@ -15,11 +13,6 @@ export default function Home() {
 			<Head>
 				<title>TW Zen - TailwindCSS Zen intersection animation plugin</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<style jsx global>{`
-					html {
-						font-family: ${inter.style.fontFamily};
-					}
-				`}</style>
 			</Head>
 			<main>
 				<div className="bg-gradient-to-b from-orange-400 to-orange-600 text-white">
@@ -85,7 +78,7 @@ export default function Home() {
 							<div className="px-16 flex flex-col w-full md:w-3/4 text-center md:text-left z-10">
 								<p className="uppercase tracking-loose w-full">Simple Tailwind intersection</p>
 								<h1 className="my-4 text-6xl font-bold leading-tight w-full">TW Zen</h1>
-								<p className="leading-normal text-2xl mb-8 w-full zen-fade zen-once">
+								<p className="leading-normal text-3xl mb-8 w-full zen-fade zen-once">
 									Tailwind intersection animation plugin
 								</p>
 							</div>
@@ -116,51 +109,50 @@ export default function Home() {
 						</svg>
 					</div>
 				</div>
-				<section id="features" className="text-slate-600 pt-24">
+				<section id="features" className="text-slate-800 pt-24">
 					<div id="example" className="w-full max-md:p-4 md:w-2/3 lg:w-1/2 xl:w-1/3 m-auto">
-						<div className="text-center font-normal font-mono p-12 bg-[#1E293B] rounded-xl shadow-xl">
-							&lt;<span className="text-blue-400">div </span>
-							<span className="text-blue-400">class=</span>
-							<span className="text-[#EE6718]">&quot;zen-once zen-pop-up&quot;</span>&gt;
+						<div className="text-center font-bold font-mono p-12 bg-[#dedede] rounded-xl shadow-xl">
+							&lt;<span className="text-slate-800">div </span>
+							<span className="text-slate-800">class=</span>
+							<span className="text-[#DD5000]">&quot;zen-once zen-pop-up&quot;</span>&gt;
 						</div>
 					</div>
-					<h2 className="uppercase font-extrabold text-3xl text-center pt-24">Features</h2>
 					<div className="text-left grid place-items-center md:grid-cols-2 gap-8 md:w-2/3 m-auto p-16 max-md:text-center">
-						<div data-even className="mt-auto mb-auto w-full sm:zen--off zen-pop-up">
-							<h3 className="text-xl font-bold">Energy saving</h3>
-							<span>Automatically suspends the animation, when element is not intersected.</span>
+						<div data-even className="md:pt-20 mt-auto mb-auto w-full sm:zen--off zen-pop-up">
+							<h3 className="text-4xl font-bold">Energy saving</h3>
+							<span className='text-xl'>Automatically suspends the animation, when element is not intersected.</span>
 						</div>
-						<div className="w-3/4 max-md:hidden ">
+						<div className="md:pt-20 w-3/4 max-md:hidden ">
 							<img className="zen-once zen-from-right" src="/energy_saving.svg" alt="energy saving" />
 						</div>
-						<div data-odd className="md:pt-12 w-3/4 max-md:hidden">
+						<div data-odd className="md:pt-20 w-3/4 max-md:hidden">
 							<img className="zen-once zen-from-left" src="/distraction_free.svg" alt="distraction free" />
 						</div>
-						<div className="mt-auto mb-auto w-full sm:zen--off zen-pop-up">
-							<h3 className="text-xl font-bold">Distraction free</h3>
-							<span>Turns off animations in reduced motion mode.</span>
+						<div className="md:pt-20 mt-auto mb-auto w-full sm:zen--off zen-pop-up">
+							<h3 className="text-4xl font-bold">Distraction free</h3>
+							<span className='text-xl'>Turns off animations in reduced motion mode.</span>
 						</div>
-						<div data-even className="md:pt-12 mt-auto mb-auto w-full sm:zen--off zen-pop-up">
-							<h3 className="text-xl font-bold">Responsive</h3>
-							<span>Supports responsive design, you can use with Tailwind breakpoints.</span>
+						<div data-even className="md:pt-20 mt-auto mb-auto w-full sm:zen--off zen-pop-up">
+							<h3 className="text-4xl font-bold">Responsive</h3>
+							<span className='text-xl'>Supports responsive design, you can use with Tailwind breakpoints.</span>
 						</div>
-						<div className="w-3/4 max-md:hidden">
+						<div className="md:pt-20 w-3/4 max-md:hidden">
 							<img className="zen-once zen-from-right" src="/responsive.svg" alt="responsive" />
 						</div>
-						<div data-odd className="md:pt-12 w-3/4 max-md:hidden">
+						<div data-odd className="md:pt-20 w-3/4 max-md:hidden">
 							<img className="zen-once zen-pop-up" src="/simple.svg" alt="small and efficient" />
 						</div>
-						<div className="mt-auto mb-auto w-full sm:zen--off zen-pop-up">
-							<h3 className="text-xl font-bold">Simple and efficient</h3>
-							<span>There is no third-party dependency, it`&apos;s small and efficient.</span>
+						<div className="md:pt-20 mt-auto mb-auto w-full sm:zen--off zen-pop-up">
+							<h3 className="text-4xl font-bold">Efficient</h3>
+							<span className='text-xl'>There is no third-party dependency, it&apos;s small and efficient.</span>
 						</div>
 					</div>
 				</section>
-				<section id="foss" className="text-slate-600 p-16 flex flex-col justify-center bg-slate-100">
-					<div className="w-24 m-auto">
+				<section id="foss" className="text-slate-600 p-20 flex flex-col justify-center bg-slate-100">
+					<div className="w-32 m-auto">
 						<img className="drop-shadow-sm zen-spin-forever zen-pause" src="/opensource-icon.svg" alt="free and open source" />
 					</div>
-					<div className="drop-shadow-sm pt-3 m-auto">Free and Open Source</div>
+					<div className="pt-8 text-2xl drop-shadow-sm m-auto">Free and Open Source</div>
 				</section>
 				<GithubCorner
 					bannerColor="#fff"
