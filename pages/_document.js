@@ -7,10 +7,10 @@ export default function Document() {
 				<meta name="description" content="Tailwind Zen intersection animation plugin" />
 				<meta
 					name="keywords"
-					content="TailwindCSS plugin, animation, Tailwind animation, one page, one-page, Tailwind animation plugin"
+					content="TailwindCSS plugin, animation, Tailwind animation, one page, one-page, Tailwind animation plugin, intersection, javascript, react, svelte, next.js, svelte, sveltekit"
 				/>
 				<link rel="icon" href="/favicon.ico" />
-				<meta property="og:title" content="TailwindCSS Zen animation plugin" />
+				<meta property="og:title" content="Tailwind Zen intersection animation plugin" />
 				<meta
 					property="og:description"
 					content="Beautiful, and simple intersection animation plugin for Tailwind"
