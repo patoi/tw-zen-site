@@ -15,7 +15,7 @@ export default function Document() {
 					property="og:description"
 					content="Beautiful, and simple animation plugin for TailwindCSS"
 				/>
-				<meta property="og:image" content="/tw-zen.jpg" />
+				<meta property="og:image" content="/tw-zen.png" />
 			</Head>
       <body className="leading-normal tracking-normal text-slate-800">
         <Main />
