@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .zen-custom-animation {
+    @apply animate-[spin_2s_linear_infinite]
+  }
+}

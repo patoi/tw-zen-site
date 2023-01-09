@@ -93,7 +93,7 @@ export default function Home() {
           <div className="text-left grid place-items-center md:grid-cols-2 gap-8 md:w-2/3 m-auto p-16 max-md:text-center">
             <div
               data-even
-              className="md:pt-12 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once"
+              className="md:pt-12 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-1000"
             >
               <h3 className="text-4xl font-bold">Energy saving</h3>
               <span className="text-xl">
@@ -115,7 +115,7 @@ export default function Home() {
                 alt="distraction free"
               />
             </div>
-            <div className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once">
+            <div className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-1000">
               <h3 className="text-4xl font-bold">Distraction free</h3>
               <span className="text-xl">
                 Turns off animations in reduced motion mode.
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
             <div
               data-even
-              className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once"
+              className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-1000"
             >
               <h3 className="text-4xl font-bold">Responsive</h3>
               <span className="text-xl">
@@ -145,7 +145,7 @@ export default function Home() {
                 alt="small and efficient"
               />
             </div>
-            <div className="pt-16 pb-8 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once">
+            <div className="pt-16 pb-8 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-1000">
               <h3 className="text-4xl font-bold">Efficient</h3>
               <span className="text-xl">
                 There is no third-party dependency, it&apos;s small and
