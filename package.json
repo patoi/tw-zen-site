@@ -12,6 +12,7 @@
   "dependencies": {
     "@next/font": "13.1.1",
     "@patoi/tw-zen-plugin": "^1.0.4",
+    "@vercel/analytics": "^0.1.6",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",
