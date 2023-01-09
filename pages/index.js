@@ -1,6 +1,7 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
 import GithubCorner from 'react-github-corner'
-import { useEffect } from 'react'
+import { TwitterShareButton, TwitterIcon } from 'next-share'
 
 export default function Home() {
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function Home() {
                 <h1 className="my-4 text-6xl font-bold leading-tight w-full">
                   TW Zen
                 </h1>
-                <p className="leading-normal text-3xl mb-8 w-full zen-fade zen-once">
+                <p className="leading-normal text-3xl mb-8 w-full">
                   Tailwind intersection animation plugin
                 </p>
               </div>
@@ -71,9 +72,19 @@ export default function Home() {
         <section id="features" className="text-slate-600 pt-24">
           <div
             id="example"
-            className="w-full max-md:p-4 md:w-2/3 lg:w-1/2 xl:w-1/3 m-auto"
+            className="relative w-full max-md:p-4 md:w-3/5 lg:w-3/5 xl:w-3/6 2xl:w-2/5 m-auto"
           >
-            <div className="text-center font-semibold font-mono p-12 bg-[#dedede] rounded-xl shadow-xl text-slate-600">
+            <div className="absolute content-center md:right-[-32px] md:top-[-32px] right-[0px] top-[-16px]">
+              <TwitterShareButton
+                url={'https://tw-zen-site.vercel.app/'}
+                title={
+                  '🧘 Tailwind Zen intersection animation plugin\n🌟 <div class="zen-once zen-pop-up">\n👉 '
+                }
+              >
+                <TwitterIcon size={64} round />
+              </TwitterShareButton>
+            </div>
+            <div className="text-xl text-center font-normal font-mono p-16 bg-[#dedede] rounded-xl shadow-xl text-slate-400">
               &lt;<span>div </span>
               <span>class=</span>
               <span className="text-[#DD5000]">
@@ -84,11 +95,21 @@ export default function Home() {
           </div>
           <div
             id="example"
-            className="text-center w-full pt-8 max-md:p-4 md:w-2/3 lg:w-1/2 xl:w-1/3 m-auto"
+            className="text-center w-full pt-8 max-md:p-4 md:w-2/3 lg:w-1/2 xl:w-1/3 m-auto zen-once zen-fade"
           >
-            <div id="readme" className='text-slate-500 text-sm'>
-              Please see the <a href="https://github.com/patoi/tw-zen-plugin/blob/main/README.md" target="_blank" rel="noreferrer" className="underline underline-offset-2 decoration-orange-500 text-orange-500">README file</a> for more details
+            <div id="readme" className="text-slate-500 text-sm">
+              Please see the{' '}
+              <a
+                href="https://github.com/patoi/tw-zen-plugin/blob/main/README.md"
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-2 decoration-orange-500 text-orange-500"
+              >
+                README file
+              </a>{' '}
+              for more details
             </div>
+            <div className="text-xs text-slate-400">created by István Pató - <a href="https://twitter.com/patoistvan">https://twitter.com/patoistvan</a></div>
           </div>
           <div className="text-left grid place-items-center md:grid-cols-2 gap-8 md:w-2/3 m-auto p-16 max-md:text-center">
             <div
@@ -156,17 +177,17 @@ export default function Home() {
         </section>
         <section
           id="foss"
-          className="text-slate-600 p-20 flex flex-col justify-center bg-slate-100"
+          className="text-slate-600 p-20 flex flex-col justify-center"
         >
-          <div className="w-32 m-auto">
+          <div className="m-auto">
             <img
-              className="drop-shadow-sm zen-spin-forever zen-pause"
+              className="mb-2 w-12 drop-shadow-sm zen-spin-forever zen-pause inline-block"
               src="/opensource-icon.svg"
               alt="free and open source"
             />
-          </div>
-          <div className="pt-8 text-2xl drop-shadow-sm m-auto">
-            Free and Open Source
+            <span className="pl-2 text-2xl drop-shadow-sm m-auto inline-block">
+              Free and Open Source
+            </span>
           </div>
         </section>
         <GithubCorner
