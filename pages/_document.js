@@ -15,7 +15,7 @@ export default function Document() {
 					property="og:description"
 					content="Beautiful, and simple intersection animation plugin for Tailwind"
 				/>
-				<meta property="og:image" content="/tw-zen.png" />
+				<meta property="og:image" content="https://tw-zen-site.vercel.app/tw-zen.png" />
 			</Head>
       <body className="leading-normal tracking-normal text-slate-800">
         <Main />
