@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-				<meta name="description" content="TailwindCSS Zen animation plugin" />
+				<meta name="description" content="Tailwind Zen intersection animation plugin" />
 				<meta
 					name="keywords"
 					content="TailwindCSS plugin, animation, Tailwind animation, one page, one-page, Tailwind animation plugin"
@@ -13,7 +13,7 @@ export default function Document() {
 				<meta property="og:title" content="TailwindCSS Zen animation plugin" />
 				<meta
 					property="og:description"
-					content="Beautiful, and simple animation plugin for TailwindCSS"
+					content="Beautiful, and simple intersection animation plugin for Tailwind"
 				/>
 				<meta property="og:image" content="/tw-zen.png" />
 			</Head>
