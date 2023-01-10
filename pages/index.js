@@ -69,10 +69,10 @@ export default function Home() {
             </svg>
           </div>
         </div>
-        <section id="features" className="text-slate-600 pt-24">
+        <section id="features" className="text-slate-600 pt-24 flex flex-col place-items-center place-content-center">
           <div
             id="example"
-            className="relative w-full max-md:p-4 md:w-3/5 lg:w-3/5 xl:w-3/6 2xl:w-2/5 m-auto"
+            className="zen-pop-up zen-once delay-300 relative w-full max-md:p-4 md:w-3/5 lg:w-3/5 xl:w-3/6 2xl:w-2/5"
           >
             <div className="absolute content-center md:right-[-32px] md:top-[-32px] right-[0px] top-[-16px]">
               <TwitterShareButton
@@ -95,7 +95,7 @@ export default function Home() {
           </div>
           <div
             id="example"
-            className="text-center w-full pt-8 max-md:p-4 md:w-2/3 lg:w-1/2 xl:w-1/3 m-auto zen-once zen-fade"
+            className="text-center w-full pt-8 max-md:p-4 md:w-2/3 lg:w-1/2 xl:w-1/3 zen-once zen-fade"
           >
             <div id="readme" className="text-slate-500 text-sm">
               Please see the{' '}
@@ -109,12 +109,17 @@ export default function Home() {
               </a>{' '}
               for more details
             </div>
-            <div className="text-xs text-slate-400">created by István Pató - <a href="https://twitter.com/patoistvan">https://twitter.com/patoistvan</a></div>
+            <div className="text-xs text-slate-400">
+              created by István Pató -{' '}
+              <a href="https://twitter.com/patoistvan">
+                https://twitter.com/patoistvan
+              </a>
+            </div>
           </div>
-          <div className="text-left grid place-items-center md:grid-cols-2 gap-8 md:w-2/3 m-auto p-16 max-md:text-center">
+          <div id="feature-list" className="text-left grid place-items-center md:grid-cols-2 gap-8 md:w-2/3 p-16 max-md:text-center">
             <div
               data-even
-              className="md:pt-12 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-1000"
+              className="md:pt-12 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-700"
             >
               <h3 className="text-4xl font-bold">Energy saving</h3>
               <span className="text-xl">
@@ -136,7 +141,7 @@ export default function Home() {
                 alt="distraction free"
               />
             </div>
-            <div className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-1000">
+            <div className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-700">
               <h3 className="text-4xl font-bold">Distraction free</h3>
               <span className="text-xl">
                 Turns off animations in reduced motion mode.
@@ -144,7 +149,7 @@ export default function Home() {
             </div>
             <div
               data-even
-              className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-1000"
+              className="pt-16 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-700"
             >
               <h3 className="text-4xl font-bold">Responsive</h3>
               <span className="text-xl">
@@ -161,12 +166,12 @@ export default function Home() {
             </div>
             <div data-odd className="pt-16 w-3/4 max-md:hidden">
               <img
-                className="zen-once zen-pop-up"
+                className="zen-once zen-from-left"
                 src="/simple.svg"
                 alt="small and efficient"
               />
             </div>
-            <div className="pt-16 pb-8 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-1000">
+            <div className="pt-16 pb-8 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-700">
               <h3 className="text-4xl font-bold">Efficient</h3>
               <span className="text-xl">
                 There is no third-party dependency, it&apos;s small and
@@ -175,19 +180,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          id="foss"
-          className="text-slate-600 p-20 flex flex-col justify-center"
-        >
-          <div className="m-auto">
-            <img
-              className="mb-2 w-12 drop-shadow-sm zen-spin-forever zen-pause inline-block"
-              src="/opensource-icon.svg"
-              alt="free and open source"
-            />
-            <span className="pl-2 text-2xl drop-shadow-sm m-auto inline-block">
-              Free and Open Source
-            </span>
+        <section id="foss" className="text-slate-600 pb-16 sm:pt-16 sm:pb-16 flex place-items-center place-content-center">
+          <img
+            className="m-1 w-12 drop-shadow-sm zen-spin-forever zen-pause"
+            src="/opensource-icon.svg"
+            alt="free and open source"
+          />
+          <div className="pl-2 text-2xl drop-shadow-sm text-center">
+            Free and Open Source
           </div>
         </section>
         <GithubCorner
