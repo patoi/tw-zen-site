@@ -69,7 +69,10 @@ export default function Home() {
             </svg>
           </div>
         </div>
-        <section id="features" className="text-slate-600 pt-24 flex flex-col place-items-center place-content-center">
+        <section
+          id="features"
+          className="text-slate-600 pt-24 flex flex-col place-items-center place-content-center"
+        >
           <div
             id="example"
             className="zen-pop-up zen-once delay-300 relative w-full max-md:p-4 md:w-3/5 lg:w-3/5 xl:w-3/6 2xl:w-2/5"
@@ -115,8 +118,21 @@ export default function Home() {
                 https://twitter.com/patoistvan
               </a>
             </div>
+            <div id="readme" className="text-slate-500 text-sm pt-8">
+              <a
+                href="https://tw-zen-example-html.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-2 decoration-orange-500 text-orange-500"
+              >
+                Check out the demo page
+              </a>
+            </div>
           </div>
-          <div id="feature-list" className="text-left grid place-items-center md:grid-cols-2 gap-8 md:w-2/3 p-16 max-md:text-center">
+          <div
+            id="feature-list"
+            className="text-left grid place-items-center md:grid-cols-2 gap-8 md:w-2/3 p-16 max-md:text-center"
+          >
             <div
               data-even
               className="md:pt-12 mt-auto mb-auto w-full sm:zen--off zen-pop-up zen-once delay-700"
@@ -180,7 +196,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="foss" className="text-slate-600 pb-16 sm:pt-16 sm:pb-16 flex place-items-center place-content-center">
+        <section
+          id="foss"
+          className="text-slate-600 pb-16 sm:pt-16 sm:pb-16 flex place-items-center place-content-center"
+        >
           <img
             className="m-1 w-12 drop-shadow-sm zen-spin-forever zen-pause"
             src="/opensource-icon.svg"
